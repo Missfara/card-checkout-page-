@@ -3,7 +3,7 @@ import Imagecssmodule from "./Image.module.css";
 
 let Image = () => {
   return (
-    <div>
+    <div className={Imagecssmodule.outerdiv}>
       <div>{/* <img src="bg-main-desktop.png" alt="pic1" /> */}</div>
       <div className={Imagecssmodule.imageonemobillediv}>
         <img

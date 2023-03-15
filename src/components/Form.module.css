@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&family=Josefin+Sans:wght@400;600;700&family=League+Spartan:wght@600;700&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,200;1,400&family=Outfit&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;400;500;600&family=Ruda:wght@500&family=Space+Grotesk:wght@500;600;700&family=Ubuntu+Mono&display=swap");
+.form {
+  border: 2px solid red;
+  margin: 100em;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.firstinput {
+  margin: 13px;
+  display: flex;
+  width: 120%;
+  height: 70px;
+  margin-top: -15px;
+  border-radius: 7px;
+  border: 1px solid hsl(270, 3%, 87%);
+}
+
+.label {
+  margin: 13px;
+  display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(45, 41, 41);
+  font-family: Space Grotesk;
+  text-align: start;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+.labeltwo {
+  margin: 13px;
+  display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(45, 41, 41);
+  font-family: Space Grotesk;
+  text-align: start;
+  margin-top: -15px;
+  border: 2px solig purple;
+  text-transform: uppercase;
+}
+
+.month {
+  /* margin: 13px; */
+  width: 50%;
+  height: 50px;
+  border-radius: 7px;
+  border: 1px solid hsl(270, 3%, 87%);
+}
+
+.year {
+  margin-left: 5px;
+  width: 40%;
+  height: 50px;
+  border-radius: 7px;
+  border: 1px solid hsl(270, 3%, 87%);
+}
+
+.cvc {
+  width: 170%;
+  height: 45px;
+  border-radius: 7px;
+  border: 1px solid hsl(270, 3%, 87%);
+}
+
+.labelthree {
+  /* margin: 13px; */
+  display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(45, 41, 41);
+  font-family: Space Grotesk;
+  text-align: start;
+  margin-left: 15px;
+  text-transform: uppercase;
+}
+
+.labelfour {
+  /* margin: 13px; */
+  display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(45, 41, 41);
+  font-family: Space Grotesk;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.button {
+  margin: 13px;
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  margin: 20px auto;
+  width: 125%;
+  height: 6em;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
