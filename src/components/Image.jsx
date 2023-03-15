@@ -8,12 +8,12 @@ let Image = () => {
       <img
         src="bg-main-mobile.png"
         alt="imageone-mobile"
-        // className={Imagecssmodule.imageonemobille}
+        className={Imagecssmodule.imageonemobille}
       />
       <img
         src="bg-card-back.png"
         alt="imagetwo-mobile"
-        className="imagetwo-mobile"
+        className={Imagecssmodule.imagetwomobille}
       />
       <img
         src="bg-card-front.png"
