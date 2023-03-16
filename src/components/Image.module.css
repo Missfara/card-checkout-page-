@@ -1,36 +1,23 @@
-.outerdiv {
-  outline: auto;
-}
-
-.imageonemobillediv {
-  position: relative;
+.bg{
   width: 100%;
-  height: 100%;
-  margin: 0;
-  border: 2px solid green;
+}
+.backContainer{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 250px;
+
 }
 
-.imageonemobille {
-  border: 2px solid yellow;
-  position: absolute;
-  width: 150%;
-  top: -3.5em;
-  left: 0;
+.front, .back{
+  width: 250px;
 }
 
-.imagetwomobille {
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  top: 2em;
-  left: 8.5em;
-  border: 2px solid yellow;
-}
+.frontContainer{
+    position: absolute;
+    top: 118px;
+    left: 20px;
+    width: 80%;
+    width: 250px;
 
-.imagethreemobile {
-  position: absolute;
-  width: 115%;
-  z-index: 2;
-  left: 1.8em;
-  top: 8.5em;
 }
