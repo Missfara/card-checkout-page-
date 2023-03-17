@@ -1,18 +1,18 @@
-.outerdiv {
+/* .outerdiv {
   outline: auto;
-}
+} */
 
-.imageonemobillediv {
+/* .imageonemobillediv {
   position: relative;
   width: 100%;
   height: 100%;
   margin: 0;
   border: 2px solid green;
-}
+} */
 
 .imageonemobille {
-  border: 2px solid yellow;
-  position: absolute;
+  /* display: none; */
+  position: relative;
   width: 150%;
   top: -3.5em;
   left: 0;
@@ -28,13 +28,39 @@
   z-index: 1;
   top: 2em;
   left: 8.5em;
-  border: 2px solid yellow;
 }
 
-.frontContainer {
+.imagethreemobile {
   position: absolute;
-  top: 118px;
-  left: 20px;
-  width: 80%;
-  width: 250px;
+  width: 115%;
+  z-index: 2;
+  left: 1.8em;
+  top: 8.5em;
+}
+
+@media only screen and (min-width: 400px) {
+  /* .outerdiv {
+    display: 2px solid green;
+    background-color: green;
+  } */
+  .imageonemobille {
+    display: none;
+  }
+  .desktopimage {
+    display: block;
+    position: relative;
+    width: 30%;
+  }
+  .imagetwomobille {
+    position: absolute;
+    width: 30%;
+    z-index: 1;
+    left: 15em;
+    top: 22em;
+  }
+  .imagethreemobile {
+    width: 30%;
+    z-index: 2;
+    left: 8em;
+  }
 }

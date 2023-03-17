@@ -3,27 +3,33 @@ import Imagecssmodule from "./Image.module.css";
 
 let Image = () => {
   return (
-    <div className={Imagecssmodule.outerdiv}>
-      <div>{/* <img src="bg-main-desktop.png" alt="pic1" /> */}</div>
+    <div>
+      <div className={Imagecssmodule.outerdiv}>
+        <img
+          src="bg-main-desktop.png"
+          alt="pic1"
+          className={Imagecssmodule.desktopimage}
+        />
+      </div>
       <div className={Imagecssmodule.imageonemobillediv}>
         <img
           src="bg-main-mobile.png"
           alt="imageone-mobile"
-          className={Imagecssmodule.bg}
+          className={Imagecssmodule.imageonemobille}
         />
       </div>
-      <div className={Imagecssmodule.backContainer}>
+      <div className={Imagecssmodule.imagetwomobillediv}>
         <img
           src="bg-card-back.png"
           alt="imagetwo-mobile"
-          className={Imagecssmodule.back}
+          className={Imagecssmodule.imagetwomobille}
         />
       </div>
-      <div className={Imagecssmodule.frontContainer}>
+      <div className={Imagecssmodule.imagethreemobilediv}>
         <img
           src="bg-card-front.png"
           alt="imagethree-mobile"
-          className={Imagecssmodule.front}
+          className={Imagecssmodule.imagethreemobile}
         />
       </div>
     </div>
