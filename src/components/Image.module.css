@@ -1,66 +1,23 @@
-/* .outerdiv {
-  outline: auto;
-} */
-
-/* .imageonemobillediv {
-  position: relative;
+.bg{
   width: 100%;
-  height: 100%;
-  margin: 0;
-  border: 2px solid green;
-} */
-
-.imageonemobille {
-  /* display: none; */
-  position: relative;
-  width: 150%;
-  top: -3.5em;
-  left: 0;
 }
-
-.desktopimage {
-  display: none;
-}
-
-.imagetwomobille {
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  top: 2em;
-  left: 8.5em;
-}
-
-.imagethreemobile {
-  position: absolute;
-  width: 115%;
-  z-index: 2;
-  left: 1.8em;
-  top: 8.5em;
-}
-
-@media only screen and (min-width: 400px) {
-  /* .outerdiv {
-    display: 2px solid green;
-    background-color: green;
-  } */
-  .imageonemobille {
-    display: none;
-  }
-  .desktopimage {
-    display: block;
-    position: relative;
-    width: 30%;
-  }
-  .imagetwomobille {
+.backContainer{
     position: absolute;
-    width: 30%;
-    z-index: 1;
-    left: 15em;
-    top: 22em;
-  }
-  .imagethreemobile {
-    width: 30%;
-    z-index: 2;
-    left: 8em;
-  }
+    top: 40px;
+    right: 20px;
+    width: 250px;
+
+}
+
+.front, .back{
+  width: 250px;
+}
+
+.frontContainer{
+    position: absolute;
+    top: 118px;
+    left: 20px;
+    width: 80%;
+    width: 250px;
+
 }
