@@ -1,23 +1,63 @@
-.bg{
+.bg {
   width: 100%;
 }
-.backContainer{
-    position: absolute;
-    top: 40px;
-    right: 20px;
-    width: 250px;
-
-}
-
-.front, .back{
+.backContainer {
+  position: absolute;
+  top: 40px;
+  right: 20px;
   width: 250px;
 }
 
-.frontContainer{
-    position: absolute;
-    top: 118px;
-    left: 20px;
-    width: 80%;
-    width: 250px;
+.front,
+.back {
+  width: 250px;
+}
 
+.frontContainer {
+  position: absolute;
+  top: 118px;
+  left: 20px;
+  width: 80%;
+  width: 250px;
+}
+
+@media screen and (min-width: 367px) {
+  .outerdiv {
+    width: 100%;
+  }
+
+  .bgContainer {
+    width: 42%;
+  }
+
+  .bg {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    position: absolute;
+    top: 140px;
+    left: 180px;
+  }
+
+  .backContainer {
+    position: static;
+  }
+
+  .front,
+  .back {
+    width: 320px;
+  }
+
+  .frontContainer {
+    position: static;
+  }
+
+  .back {
+    margin-right: -150px;
+  }
 }

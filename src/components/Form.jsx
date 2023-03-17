@@ -3,10 +3,9 @@ import formcssmodule from "./Form.module.css";
 
 let Form = () => {
   return (
-    <div>
+    <div className={formcssmodule.formContainer}>
       <form className={formcssmodule.form}>
-        <label className={formcssmodule.label}>
-          Cardholder Name</label>
+        <label className={formcssmodule.label}>Cardholder Name</label>
 
         <input
           type="text"
@@ -15,9 +14,7 @@ let Form = () => {
           className={formcssmodule.firstinput}
         />
 
-
-        <label className={formcssmodule.label}>
-          Card Number </label >
+        <label className={formcssmodule.label}>Card Number </label>
         <input
           type="text"
           placeholder="eg  0123 4567 8901 234000"
@@ -25,12 +22,9 @@ let Form = () => {
           className={formcssmodule.firstinput}
         />
 
-
         <div className={formcssmodule.flex}>
           <div className={formcssmodule.date}>
-            <label className={formcssmodule.label}>
-              Exp.Date (mm / yy)
-            </label>
+            <label className={formcssmodule.label}>Exp.Date (mm / yy)</label>
             <div className={formcssmodule.dateInput}>
               <input
                 type="text"
@@ -56,7 +50,6 @@ let Form = () => {
               className={formcssmodule.cvc}
             />
           </div>
-
         </div>
 
         {/* <button className={formcssmodule.button}>

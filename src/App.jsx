@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css"
 
 // import Form from "./Form";
 // import Imageone from "./Image";

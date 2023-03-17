@@ -11,7 +11,15 @@
   margin-top: 30em;
 } */
 
-
 * {
   box-sizing: border-box;
+}
+
+@media screen and (min-width: 367px) {
+  .App {
+    display: flex;
+  }
+  .image {
+    width: 50%;
+  }
 }
