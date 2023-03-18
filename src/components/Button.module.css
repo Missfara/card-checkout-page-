@@ -1,0 +1,21 @@
+.button {
+  width: 90%;
+  margin: 13px;
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  font-family: Space Grotesk;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+}
+
+/* .button {
+  margin: 13px;
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  font-family: Space Grotesk;
+  margin: 20px auto;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+} */
