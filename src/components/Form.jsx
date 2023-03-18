@@ -94,7 +94,7 @@ let Form = ({
           <div className={formcssmodule.cvv}>
             <label className={formcssmodule.label}>cvc</label>
             <input
-              type="text"
+              type="number"
               placeholder="e.g 123"
               required
               className={formcssmodule.cvc}
@@ -102,6 +102,7 @@ let Form = ({
               onChange={(e) => {
                 setCvc(e.target.value);
               }}
+            
             />
           </div>
         </div>

@@ -31,6 +31,7 @@ function App() {
           date={date}
           setDate={setDate}
           setCvc={setCvc}
+          cvc={cvc}
         />
       </div>
       <div className="form">
