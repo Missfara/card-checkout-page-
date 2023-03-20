@@ -127,7 +127,7 @@ let Form = ({
           <div className={formcssmodule.cvv}>
             <label className={formcssmodule.label}>cvc</label>
             <input
-              type="tel"
+              type="text"
               placeholder="e.g 123"
               required
               className={formcssmodule.cvc}
@@ -135,7 +135,6 @@ let Form = ({
               onChange={(e) => {
                 setCvc(e.target.value);
               }}
-              onSubmit={() => handleFormSubmit()}
             />
             <small className={formcssmodule.small}>can't be blank</small>
           </div>

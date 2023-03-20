@@ -45,11 +45,6 @@ function App() {
           date={date}
           setDate={setDate}
           setCvc={setCvc}
-          cvc={cvc}
-          year={year}
-          setYear={setYear}
-          month={month}
-          setMonth={setMonth}
         />
       </div>
       <div className="form">
