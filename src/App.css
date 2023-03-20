@@ -15,7 +15,7 @@
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 367px) {
+@media screen and (min-width: 420px) {
   .App {
     display: flex;
   }
@@ -23,3 +23,4 @@
     width: 50%;
   }
 }
+

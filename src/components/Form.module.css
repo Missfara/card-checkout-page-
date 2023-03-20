@@ -84,7 +84,7 @@
   height: 40px;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 420px) {
   .formContainer {
     display: flex;
     height: 100vh;
