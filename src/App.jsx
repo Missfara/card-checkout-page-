@@ -9,13 +9,27 @@ import Input from "./components/Input";
 import { useState } from "react";
 import Button from "./components/Button";
 import { format } from "date-fns";
+import Starlogo from "./components/Starlogo";
+import { ReactDOM } from "react-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Switch,
+  Navlink,
+} from "react-router-dom";
+import { Fragment } from "react";
+import { Link } from "react-router-dom";
+import Thankyou from "./components/Thankyou";
 
 function App() {
   const [inputText, setInputtext] = useState("");
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
   const [cvc, setCvc] = useState("");
-  const [buttonControl, setButtonControl] = useState("yep");
+  const [buttonControl, setButtonControl] = useState(false);
+  const [month, setMonth] = useState("");
+  const [year, setYear] = useState("");
 
   return (
     <div className="App">
@@ -31,6 +45,11 @@ function App() {
           date={date}
           setDate={setDate}
           setCvc={setCvc}
+          cvc={cvc}
+          year={year}
+          setYear={setYear}
+          month={month}
+          setMonth={setMonth}
         />
       </div>
       <div className="form">
@@ -45,6 +64,10 @@ function App() {
           setDate={setDate}
           cvc={cvc}
           setCvc={setCvc}
+          month={month}
+          setMonth={setMonth}
+          year={year}
+          setYear={setYear}
         />
       </div>
     </div>
