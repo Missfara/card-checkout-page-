@@ -94,4 +94,13 @@
   input:invalid ~ .errordate {
     display: block;
   }
+
+  .form {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 1em;
+  }
 }

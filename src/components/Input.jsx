@@ -17,7 +17,7 @@ let Input = ({
     <div>
       <form className={InputModuleCss.formdiv}>
         {/* <h3 className={InputModuleCss.formdiv}> {inputText}</h3> */}
-        <input
+        {/* <input
           type="text"
           placeholder="0000 0000 0000 0000"
           required
@@ -41,7 +41,7 @@ let Input = ({
             setInputtext(result);
             console.log(result);
           }}
-        />
+        /> */}
       </form>
       <span className={InputModuleCss.cvctextbackcard}>{cvc}</span>
       <div>

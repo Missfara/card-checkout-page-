@@ -5,7 +5,7 @@ import "./App.css";
 // import Imageone from "./Image";
 import Form from "./components/Form";
 import Image from "./components/Image";
-import Input from "./components/Input";
+
 import { useState } from "react";
 import Button from "./components/Button";
 import { format } from "date-fns";
@@ -34,9 +34,17 @@ function App() {
   return (
     <div className="App">
       <div className="image">
-        <Image />
+        <Image
+          inputText={inputText}
+          setInputText={setInputtext}
+          name={name}
+          cvc={cvc}
+          month={month}
+          year={year}
+
+        />
       </div>
-      <div>
+      {/* <div>
         <Input
           setInputtext={setInputtext}
           inputText={inputText}
@@ -46,7 +54,7 @@ function App() {
           setDate={setDate}
           setCvc={setCvc}
         />
-      </div>
+      </div> */}
       <div className="form">
         <Form
           setInputtext={setInputtext}

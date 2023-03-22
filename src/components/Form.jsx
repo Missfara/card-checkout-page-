@@ -66,18 +66,18 @@ let Form = ({
             required
             maxLength={19}
             className={formcssmodule.firstinput}
-            onKeyDown={(e) => {
-              const text = e.target.value;
-              console.log(text);
-              const value = text.length > 4 && text.match(/\d{4}/g).join(" ");
-              let elength = text?.match(/\d/g)?.length;
-              const slice = elength - 4 * ~~(elength / 4);
-              let result =
-                value && slice ? value + " " + text.slice(-slice) : text;
-              setInputtext(result);
-              console.log(result);
-              if (!/\d|Backspace/.test(e.key)) e.preventDefault();
-            }}
+            // onKeyDown={(e) => {
+            //   const text = e.target.value;
+            //   console.log(text);
+            //   const value = text.length > 4 && text.match(/\d{4}/g).join(" ");
+            //   let elength = text?.match(/\d/g)?.length;
+            //   const slice = elength - 4 * ~~(elength / 4);
+            //   let result =
+            //     value && slice ? value + " " + text.slice(-slice) : text;
+            //   setInputtext(result);
+            //   console.log(result);
+            //   if (!/\d|Backspace/.test(e.key)) e.preventDefault();
+            // }}
             value={inputText}
             onChange={(e) => {
               const text = e.target.value;
@@ -107,6 +107,8 @@ let Form = ({
                 onChange={(e) => {
                   console.log(e.target.value);
                   setMonth(e.target.value);
+                  console.log(month)
+
                 }}
               />
 
@@ -131,9 +133,10 @@ let Form = ({
               placeholder="e.g 123"
               required
               className={formcssmodule.cvc}
-              value={cvc}
+              maxLength={3}
               onChange={(e) => {
                 setCvc(e.target.value);
+                console.log(cvc);
               }}
             />
             <small className={formcssmodule.small}>can't be blank</small>
